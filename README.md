@@ -160,13 +160,13 @@ cat my.txt
 Expected output:
 
 gomycode
-File Structure
+
 
 At this point, your working directory should contain:
 
 my.txt
 index.jpeg
-🖼️ 4. Choose an Image
+
 
 Select an image supported by Steghide.
 
@@ -182,10 +182,8 @@ ls -l index.jpeg
 
 You can also check the file type:
 
-file index.jpeg
+index.jpeg
 🔐 5. Embed the Secret Message
-
-The command in the original instructions appears to have a small syntax issue.
 
 The standard Steghide syntax is:
 
@@ -215,8 +213,6 @@ The image now contains the hidden file.
 
 ## Steghide Embedding
 
-
-![Steghide Embedding](screenshots/steghide-embed.png)
 🔍 7. Verify the Embedded Data
 
 Before transferring the image to the XAMPP server, verify that Steghide recognizes the embedded data.
@@ -226,10 +222,8 @@ Run:
 steghide info index.jpeg
 
 You should see information indicating that an embedded file exists.
+<img width="1920" height="1009" alt="Screenshot 2026-09-14 173317 PNG" src="https://github.com/user-attachments/assets/ff50ae4e-19f9-4c04-9271-01fb18c60ac7" />
 
-For example:
-
-embedded file "my.txt"
 
 The exact output may vary depending on your Steghide version and image.
 
@@ -246,6 +240,9 @@ extract	Extract embedded data
 -sf	Specifies the stego file
 index.jpeg	Image containing the hidden data
 
+<img width="1920" height="1009" alt="Screenshot 2026-09-14 175356" src="https://github.com/user-attachments/assets/bf2767cf-03f5-45ee-b1ed-a1830d4931e0" />
+
+
 If you created a passphrase during embedding, Steghide will ask you to enter it.
 
 After successful extraction, check:
@@ -258,20 +255,8 @@ gomycode
 
 This confirms that the hidden message can be recovered from the image.
 
-📸 9. Screenshot — Extraction
+<img width="1920" height="1009" alt="Screenshot 2026-09-14 175514" src="https://github.com/user-attachments/assets/ad759ffc-33e6-4e44-9cca-c17835572921" />
 
-Take a screenshot showing the extraction process.
-
-Recommended filename:
-
-screenshots/steghide-extract.png
-
-Example:
-
-## Extracting the Hidden Message
-
-
-![Steghide Extraction](screenshots/steghide-extract.png)
 🌐 10. Serve the Steganographic Image Using XAMPP
 
 The next stage of the project is to transfer the steganographic image from Kali Linux to the Windows host.
@@ -303,6 +288,8 @@ Transfer:
 index.jpeg
 
 from Kali Linux to your Windows host.
+<img width="869" height="452" alt="Capture 39" src="https://github.com/user-attachments/assets/189d6950-223e-474f-919a-9cecc0783573" />
+
 
 Possible methods include:
 
@@ -332,6 +319,10 @@ C:\xampp\htdocs\
 
 Your directory should look similar to:
 
+<img width="855" height="259" alt="Capture 40" src="https://github.com/user-attachments/assets/4e7e0c45-2bca-4ec6-a24d-6b390b38bdbb" />
+
+
+
 C:\xampp\htdocs\
 │
 ├── index.html
@@ -351,6 +342,9 @@ Example:
 Apache    Running
 
 If Apache does not start, check whether another application is already using port 80 or the configured Apache port.
+
+
+<img width="1002" height="855" alt="Screenshot 2026-09-14 180625" src="https://github.com/user-attachments/assets/f3f3b92f-5211-4a2b-9794-52c89a66cc0e" />
 
 📝 14. Create the HTML Page
 
@@ -406,6 +400,9 @@ Your AES encrypted message goes here.
 
 with the AES-encrypted message required by your assignment.
 
+<img width="1920" height="1009" alt="Screenshot 2026-09-14 181619" src="https://github.com/user-attachments/assets/b00ed607-a8a3-4fc4-b771-854bcfb1131b" />
+
+
 🌍 15. Open the Web Page
 
 Open a browser on the Windows host and navigate to:
@@ -441,20 +438,9 @@ The page should contain:
 
 The image displayed by the browser is the same image containing the hidden my.txt data.
 
-📸 16. Final Screenshot
-
-Take a screenshot of the rendered webpage.
-
-Recommended filename:
-
-screenshots/final-webpage.png
-
-Add it to your README:
-
-## Final XAMPP Web Page
+<img width="1920" height="1009" alt="Screenshot 2026-09-14 181234" src="https://github.com/user-attachments/assets/8edebf9e-a291-4a04-aff3-103aaa8379f2" />
 
 
-![Final Web Page](screenshots/final-webpage.png)
 🔬 17. Verification
 
 The project should be verified at several stages.
