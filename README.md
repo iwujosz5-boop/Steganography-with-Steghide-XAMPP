@@ -13,7 +13,7 @@ Serving the image using XAMPP
 Displaying the image through HTML
 Documenting the process with screenshots
 
-⚠️ Lab disclaimer: This project is intended for educational purposes in a controlled environment. Only use files, systems, and web servers that you own or have permission to test.
+⚠️ Lab disclaimer: This project is intended for educational purposes in a controlled environment. Only use files, systems, and web servers that you own or have permission to test
 
 🎯 Objectives
 
@@ -130,6 +130,9 @@ sudo apt install steghide
 
 Verify the installation again:
 
+<img width="438" height="221" alt="Capture 31" src="https://github.com/user-attachments/assets/64897279-98fe-4166-bc66-ee15a733b74f" />
+
+
 steghide --version
 📝 3. Create the Secret Message
 
@@ -140,6 +143,9 @@ my.txt
 You can create it using:
 
 nano my.txt
+
+
+<img width="435" height="97" alt="Capture 35" src="https://github.com/user-attachments/assets/2fbe83f9-0d29-4474-8f24-3a3b5415b8c9" />
 
 Enter:
 
@@ -172,6 +178,8 @@ Verify that the file exists:
 
 ls -l index.jpeg
 
+<img width="960" height="505" alt="image" src="https://github.com/user-attachments/assets/06edcb32-d010-4586-96df-b76e70e1134e" />
+
 You can also check the file type:
 
 file index.jpeg
@@ -202,15 +210,8 @@ Enter a passphrase when prompted.
 
 The image now contains the hidden file.
 
-📸 6. Screenshot — Embedding Process
+<img width="856" height="337" alt="Capture 38" src="https://github.com/user-attachments/assets/e1ed4fe9-c7c7-46e0-bb62-1089c25d5f37" />
 
-Take a screenshot showing the terminal and the Steghide embedding process.
-
-Recommended screenshot filename:
-
-screenshots/steghide-embed.png
-
-GitHub Markdown:
 
 ## Steghide Embedding
 
